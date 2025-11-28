@@ -267,7 +267,7 @@
         <mxCell id="LLn1ih-7HewxOg2NCDpP-41" value="T: number of CBGs, fixed&lt;div&gt;L: Embedding dimension from BERT, I am not sure if it is fixed, maybe could be fixed number of tweets&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-20" y="300" width="340" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="LLn1ih-7HewxOg2NCDpP-42" value="TASK:&amp;nbsp;&lt;div&gt;Create pair of training data for Q-Former:&lt;/div&gt;&lt;div&gt;positive: relative easy, mobility+social media at the same day&lt;/div&gt;&lt;div&gt;Negative: could be easy as well, such as mobility + social media data that is not at the same day&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="LLn1ih-7HewxOg2NCDpP-42" value="TASK1:&amp;nbsp;&lt;div&gt;Create pair of training data for Q-Former:&lt;/div&gt;&lt;div&gt;positive: relative easy, mobility+social media at the same day&lt;/div&gt;&lt;div&gt;Negative: could be easy as well, such as mobility + social media data that is not at the same day&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="-200" y="10" width="640" height="230" as="geometry" />
         </mxCell>
       </root>
