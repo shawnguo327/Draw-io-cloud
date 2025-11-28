@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
   <diagram name="第 1 页" id="ETbFhPdvCQqkmoQMESFU">
-    <mxGraphModel dx="2015" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2549" dy="873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -44,7 +44,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wRCZqNoFsa4B5RkUk_hN-19" value="database" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="610" y="430" width="120" height="60" as="geometry" />
+          <mxGeometry x="610" y="417.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wRCZqNoFsa4B5RkUk_hN-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.001;entryY=0.433;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wRCZqNoFsa4B5RkUk_hN-21" target="wRCZqNoFsa4B5RkUk_hN-26" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -269,6 +269,9 @@
         </mxCell>
         <mxCell id="LLn1ih-7HewxOg2NCDpP-42" value="TASK1:&amp;nbsp;&lt;div&gt;Create pair of training data for Q-Former:&lt;/div&gt;&lt;div&gt;positive: relative easy, mobility+social media at the same day&lt;/div&gt;&lt;div&gt;Negative: could be easy as well, such as mobility + social media data that is not at the same day&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="-200" y="10" width="640" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="LLn1ih-7HewxOg2NCDpP-43" value="TASK2:&amp;nbsp;&lt;div&gt;Design loss function for Q-Former training,&amp;nbsp;&lt;/div&gt;&lt;div&gt;1. Contrastive learning loss(pure contrastive learning)&lt;/div&gt;&lt;div&gt;2. Generation loss(given mobility to generate social media)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="-750" y="770" width="640" height="230" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
