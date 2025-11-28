@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
   <diagram name="第 1 页" id="ETbFhPdvCQqkmoQMESFU">
-    <mxGraphModel dx="2549" dy="873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3778" dy="1496" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -154,22 +154,22 @@
         <mxCell id="wRCZqNoFsa4B5RkUk_hN-38" value="M ∈ R^{T × d}" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="470" width="80" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="wRCZqNoFsa4B5RkUk_hN-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wRCZqNoFsa4B5RkUk_hN-43" edge="1">
+        <mxCell id="LLn1ih-7HewxOg2NCDpP-44" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wRCZqNoFsa4B5RkUk_hN-43">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="120" y="675" as="targetPoint" />
+            <mxPoint y="675" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wRCZqNoFsa4B5RkUk_hN-43" value="Q-former" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="-430" y="620" width="367.5" height="110" as="geometry" />
         </mxCell>
         <mxCell id="wRCZqNoFsa4B5RkUk_hN-47" value="Q ∈ R^{num_query × d}" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="130" y="630" width="160" height="60" as="geometry" />
+          <mxGeometry x="10" y="630" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wRCZqNoFsa4B5RkUk_hN-48" value="Q ∈ R^{num_query × d}" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="140" y="640" width="160" height="60" as="geometry" />
+          <mxGeometry x="20" y="640" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wRCZqNoFsa4B5RkUk_hN-49" value="Q ∈ R^{num_query × d}" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="150" y="650" width="160" height="60" as="geometry" />
+          <mxGeometry x="30" y="650" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wRCZqNoFsa4B5RkUk_hN-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wRCZqNoFsa4B5RkUk_hN-50" target="wRCZqNoFsa4B5RkUk_hN-52" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -180,19 +180,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="wRCZqNoFsa4B5RkUk_hN-50" value="Q ∈ R^{num_query × d}" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="160" y="660" width="160" height="60" as="geometry" />
+          <mxGeometry x="40" y="660" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wRCZqNoFsa4B5RkUk_hN-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wRCZqNoFsa4B5RkUk_hN-51" target="wRCZqNoFsa4B5RkUk_hN-54" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wRCZqNoFsa4B5RkUk_hN-51" value="prompt design" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="370" y="730" width="120" height="60" as="geometry" />
+          <mxGeometry x="255" y="780" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="wRCZqNoFsa4B5RkUk_hN-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wRCZqNoFsa4B5RkUk_hN-52" target="wRCZqNoFsa4B5RkUk_hN-54" edge="1">
+        <mxCell id="LLn1ih-7HewxOg2NCDpP-46" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wRCZqNoFsa4B5RkUk_hN-52" target="LLn1ih-7HewxOg2NCDpP-45">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wRCZqNoFsa4B5RkUk_hN-52" value="prefix prompt" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="370" y="650" width="120" height="60" as="geometry" />
+        <mxCell id="wRCZqNoFsa4B5RkUk_hN-52" value="prefix/soft prompt" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="660" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wRCZqNoFsa4B5RkUk_hN-54" value="LLM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="540" y="630" width="110" height="160" as="geometry" />
@@ -223,7 +223,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LLn1ih-7HewxOg2NCDpP-1" value="Robin part" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="1060" width="240" height="60" as="geometry" />
+          <mxGeometry x="330" y="1060" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="LLn1ih-7HewxOg2NCDpP-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LLn1ih-7HewxOg2NCDpP-1" target="wRCZqNoFsa4B5RkUk_hN-57">
           <mxGeometry relative="1" as="geometry" />
@@ -272,6 +272,12 @@
         </mxCell>
         <mxCell id="LLn1ih-7HewxOg2NCDpP-43" value="TASK2:&amp;nbsp;&lt;div&gt;Design loss function for Q-Former training,&amp;nbsp;&lt;/div&gt;&lt;div&gt;1. Contrastive learning loss(pure contrastive learning)&lt;/div&gt;&lt;div&gt;2. Generation loss(given mobility to generate social media)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="-750" y="770" width="640" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="LLn1ih-7HewxOg2NCDpP-47" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="LLn1ih-7HewxOg2NCDpP-45" target="wRCZqNoFsa4B5RkUk_hN-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LLn1ih-7HewxOg2NCDpP-45" value="direct or indirect into" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="630" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
