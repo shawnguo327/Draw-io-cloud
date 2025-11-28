@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
   <diagram name="第 1 页" id="ETbFhPdvCQqkmoQMESFU">
-    <mxGraphModel dx="3258" dy="1232" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1811" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -288,7 +288,7 @@
         <mxCell id="LLn1ih-7HewxOg2NCDpP-50" value="Other:&lt;div&gt;integrate POI data&lt;/div&gt;&lt;div&gt;improve performance at each part&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1100" y="1240" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="LLn1ih-7HewxOg2NCDpP-51" value="Build up graph&amp;nbsp;&lt;div&gt;different difficulty level&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="LLn1ih-7HewxOg2NCDpP-51" value="Build up graph&amp;nbsp;&lt;div&gt;different difficulty level:&lt;/div&gt;&lt;div&gt;1. adjacency matrix&lt;/div&gt;&lt;div&gt;2. add population to nodes&lt;/div&gt;&lt;div&gt;3. use osmnx to generate weighted edges with road network&lt;/div&gt;&lt;div&gt;4.safegraph trajaectory&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="375" y="220" width="275" height="140" as="geometry" />
         </mxCell>
       </root>
