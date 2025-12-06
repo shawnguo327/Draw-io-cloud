@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
+  <diagram name="第 1 页" id="wLhNCM1Z5s7IkzXrSi_h">
+    <mxGraphModel dx="1501" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WPt1CNedDGdnXQb8b1il-8" edge="1" parent="1" source="WPt1CNedDGdnXQb8b1il-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="WPt1CNedDGdnXQb8b1il-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="主节点机器" vertex="1">
+          <mxGeometry height="60" width="120" x="130" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="端口29500" vertex="1">
+          <mxGeometry height="80" width="120" x="130" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="公网" vertex="1">
+          <mxGeometry height="60" width="400" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="局域网" vertex="1">
+          <mxGeometry height="60" width="120" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="worker0" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-11" edge="1" parent="1" source="WPt1CNedDGdnXQb8b1il-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="203" y="448" />
+              <mxPoint x="203" y="448" />
+              <mxPoint x="203" y="400" />
+            </Array>
+            <mxPoint x="203" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;ssh -i ~/.ssh/id_ed25519 -N -L 29500:localhost:29500 user@8.8.8.8&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="450" x="90" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="公网ip 8.8.8.8" vertex="1">
+          <mxGeometry height="30" width="280" x="50" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-12" edge="1" parent="1" source="WPt1CNedDGdnXQb8b1il-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="WPt1CNedDGdnXQb8b1il-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="主节点机器" vertex="1">
+          <mxGeometry height="60" width="120" x="770" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="端口29500" vertex="1">
+          <mxGeometry height="80" width="120" x="770" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="公网" vertex="1">
+          <mxGeometry height="60" width="400" x="640" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="局域网" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="worker0" vertex="1">
+          <mxGeometry height="60" width="120" x="790" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-18" edge="1" parent="1" source="WPt1CNedDGdnXQb8b1il-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="843" y="448" />
+              <mxPoint x="843" y="448" />
+              <mxPoint x="843" y="400" />
+            </Array>
+            <mxPoint x="843" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;ssh -i ~/.ssh/id_ed25519 -N -L 29500:localhost:29500 user@8.8.8.8&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="450" x="730" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="WPt1CNedDGdnXQb8b1il-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="localhost:29950" vertex="1">
+          <mxGeometry height="30" width="280" x="690" y="300" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
