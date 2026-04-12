@@ -164,6 +164,9 @@
         <mxCell id="14-qmJvSd-VNB8c7MeEq-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="NDVI and Impervious surface disparity" vertex="1">
           <mxGeometry height="60" width="120" x="1790" y="270" as="geometry" />
         </mxCell>
+        <mxCell id="14-qmJvSd-VNB8c7MeEq-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="LST-Income disparity" vertex="1">
+          <mxGeometry height="60" width="120" x="1790" y="390" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
