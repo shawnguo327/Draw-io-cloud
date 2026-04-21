@@ -20,7 +20,19 @@
           <mxGeometry height="180" width="500" x="414" y="-170" as="geometry" />
         </mxCell>
         <mxCell id="BttkzOgxcZYclg_ATgkw-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="3Scalable UAV Multi-Hop Networking via Multi-Agent Reinforcement Learning with Large Language Models" vertex="1">
-          <mxGeometry height="70" width="240" x="70" y="-130" as="geometry" />
+          <mxGeometry height="70" width="260" x="50" y="-130" as="geometry" />
+        </mxCell>
+        <mxCell id="BttkzOgxcZYclg_ATgkw-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;br&gt;2Large Language Models for Robotics: A Survey&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="240" x="60" y="-410" as="geometry" />
+        </mxCell>
+        <mxCell id="BttkzOgxcZYclg_ATgkw-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="1Integrative AI framework for robotics: LLM-enabled reinforcement learning in object manipulation and task planning" vertex="1">
+          <mxGeometry height="60" width="240" x="60" y="-570" as="geometry" />
+        </mxCell>
+        <mxCell id="BttkzOgxcZYclg_ATgkw-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;li&gt;&lt;p data-path-to-node=&quot;10,0,0&quot;&gt;&lt;b data-path-to-node=&quot;10,0,0&quot; data-index-in-node=&quot;0&quot;&gt;研究目标&lt;/b&gt;：该论文全面梳理了LLMs在机器人感知、决策、控制和交互等核心模块中的历史演进与最新应用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;10,1,0&quot;&gt;&lt;b data-path-to-node=&quot;10,1,0&quot; data-index-in-node=&quot;0&quot;&gt;核心演进&lt;/b&gt;：论文指出，LLMs正逐渐演变为机器人系统的“大脑”，并衍生出了多种专门处理物理交互的关键架构，包括视觉-语言模型（VLM）、视觉-语言-导航模型（VLN），以及将视觉、语言和物理驱动直接结合的&lt;b data-path-to-node=&quot;10,1,0&quot; data-index-in-node=&quot;101&quot;&gt;视觉-语言-动作模型（VLA）&lt;/b&gt;。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;10,2,0&quot;&gt;&lt;b data-path-to-node=&quot;10,2,0&quot; data-index-in-node=&quot;0&quot;&gt;发展趋势&lt;/b&gt;：大模型凭借海量预训练数据，展现出了惊人的任务规划（Task Planning）和零样本泛化能力，使得机器人能够直接理解“把盒子移到椅子上”这样模糊的自然语言指令，但其在物理世界中的长程任务执行纠错以及异构多智能体协作仍是重点探索领域。&lt;/p&gt;&lt;/li&gt;" vertex="1">
+          <mxGeometry height="180" width="560" x="400" y="-400" as="geometry" />
+        </mxCell>
+        <mxCell id="BttkzOgxcZYclg_ATgkw-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;li&gt;&lt;p data-path-to-node=&quot;13,0,0&quot;&gt;&lt;b data-path-to-node=&quot;13,0,0&quot; data-index-in-node=&quot;0&quot;&gt;研究目标&lt;/b&gt;：为了解决大模型无法直接适应物理环境底层变化，以及单纯强化学习缺乏常识推理能力的双重痛点。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;13,1,0&quot;&gt;&lt;b data-path-to-node=&quot;13,1,0&quot; data-index-in-node=&quot;0&quot;&gt;核心方法&lt;/b&gt;：作者构建了一个创新的混合AI架构，包含高层规划器和底层控制器。高层规划器由 GPT-4 和基于PPO训练的深度强化学习子模块共同组成，将抽象指令转化为具体的技能序列（如注视、移动、抓取）。系统设计了&lt;b data-path-to-node=&quot;13,1,0&quot; data-index-in-node=&quot;104&quot;&gt;自适应加权决策模块（Adaptable Weighted Decision Module）&lt;/b&gt;：在陌生的新环境中，赋予 GPT-4 更高的权重以利用其强大的上下文推理能力；在熟悉的环境中，则赋予 RL 更高权重以利用其高效的已学策略。指令下达后，由底层的RL智能体结合深度图和语义图进行精确的连续动作控制。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;13,2,0&quot;&gt;&lt;b data-path-to-node=&quot;13,2,0&quot; data-index-in-node=&quot;0&quot;&gt;结果&lt;/b&gt;：在动态环境下的抓取与放置测试中，该整合系统保持了85%的任务成功率，而仅使用纯强化学习的成功率为65%，纯GPT-4控制的成功率仅为70%。&lt;/p&gt;&lt;/li&gt;" vertex="1">
+          <mxGeometry height="200" width="560" x="400" y="-660" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
