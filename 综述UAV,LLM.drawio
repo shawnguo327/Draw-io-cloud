@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36" version="29.6.6">
   <diagram name="第 1 页" id="T691O49PrN9Ef3P2iLfa">
-    <mxGraphModel dx="946" dy="1800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1810" dy="1641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -31,8 +31,8 @@
         <mxCell id="BttkzOgxcZYclg_ATgkw-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;li&gt;&lt;p data-path-to-node=&quot;13,0,0&quot;&gt;&lt;b data-path-to-node=&quot;13,0,0&quot; data-index-in-node=&quot;0&quot;&gt;研究目标&lt;/b&gt;：为了解决大模型无法直接适应物理环境底层变化，以及单纯强化学习缺乏常识推理能力的双重痛点。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;13,1,0&quot;&gt;&lt;b data-path-to-node=&quot;13,1,0&quot; data-index-in-node=&quot;0&quot;&gt;核心方法&lt;/b&gt;：作者构建了一个创新的混合AI架构，包含高层规划器和底层控制器。高层规划器由 GPT-4 和基于PPO训练的深度强化学习子模块共同组成，将抽象指令转化为具体的技能序列（如注视、移动、抓取）。系统设计了&lt;b data-path-to-node=&quot;13,1,0&quot; data-index-in-node=&quot;104&quot;&gt;自适应加权决策模块（Adaptable Weighted Decision Module）&lt;/b&gt;：在陌生的新环境中，赋予 GPT-4 更高的权重以利用其强大的上下文推理能力；在熟悉的环境中，则赋予 RL 更高权重以利用其高效的已学策略。指令下达后，由底层的RL智能体结合深度图和语义图进行精确的连续动作控制。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;13,2,0&quot;&gt;&lt;b data-path-to-node=&quot;13,2,0&quot; data-index-in-node=&quot;0&quot;&gt;结果&lt;/b&gt;：在动态环境下的抓取与放置测试中，该整合系统保持了85%的任务成功率，而仅使用纯强化学习的成功率为65%，纯GPT-4控制的成功率仅为70%。&lt;/p&gt;&lt;/li&gt;" vertex="1">
           <mxGeometry height="200" width="560" x="400" y="-660" as="geometry" />
         </mxCell>
-        <mxCell id="BttkzOgxcZYclg_ATgkw-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="400" y="350" as="geometry" />
+        <mxCell id="BttkzOgxcZYclg_ATgkw-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="集群系统的范式必须从“同步且中心化”彻底转向“异步且分布式”。" vertex="1">
+          <mxGeometry height="110" width="210" x="1150" y="315" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
