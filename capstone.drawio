@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="rrjs3x73q6XKG6Un8orv">
-    <mxGraphModel dx="1867" dy="1659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="476" dy="1480" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="wsXrPMJaeRBQqD8lpksv-9" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="Flood extents" vertex="1">
           <mxGeometry height="109" width="180" x="1570" y="-605" as="geometry" />
         </mxCell>
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fill hole, remove building" vertex="1">
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pre-process：&lt;div&gt;- Fillout tiny pits&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="1050" y="-591" as="geometry" />
         </mxCell>
         <mxCell id="wsXrPMJaeRBQqD8lpksv-18" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;NYC 1ft LiDAR DEM&lt;/b&gt;&#xa;DSM .img, 93 GB&#xa;156k × 158k px" vertex="1">
@@ -164,15 +164,6 @@
         <mxCell id="wsXrPMJaeRBQqD8lpksv-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" value="FFE:&lt;div&gt;realistic_ffe = first floor height - DEM at building&lt;/div&gt;&lt;div&gt;inundation_depth = sensor depth - realistic_ ffe&lt;/div&gt;&lt;div&gt;Major Inundation: &amp;gt;2.0ft&lt;/div&gt;&lt;div&gt;Moderate Inundation: 1-2ft&lt;/div&gt;&lt;div&gt;Minor Inundation: 0-1ft&lt;/div&gt;&lt;div&gt;At Risk: near but not flooded&lt;/div&gt;&lt;div&gt;Safe: plenty of heights&lt;/div&gt;&lt;div&gt;Very safe: ...&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="165" width="260" x="1058" y="-460" as="geometry" />
         </mxCell>
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="building impact" vertex="1">
-          <mxGeometry height="60" width="120" x="1990" y="-566" as="geometry" />
-        </mxCell>
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="subway entrances" vertex="1">
-          <mxGeometry height="60" width="120" x="2100" y="-445" as="geometry" />
-        </mxCell>
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Vehicle passability" vertex="1">
-          <mxGeometry height="60" width="120" x="1990" y="-341.73" as="geometry" />
-        </mxCell>
         <mxCell id="wsXrPMJaeRBQqD8lpksv-79" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="" vertex="1">
           <mxGeometry height="70" width="100" x="1770" y="-566" as="geometry" />
         </mxCell>
@@ -181,9 +172,6 @@
         </mxCell>
         <mxCell id="wsXrPMJaeRBQqD8lpksv-81" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="" vertex="1">
           <mxGeometry height="70" width="220" x="1640" y="-352.23" as="geometry" />
-        </mxCell>
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-82" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.triadArrow;dy=10;dx=20;arrowHead=40;rotation=90;" value="" vertex="1">
-          <mxGeometry height="70" width="100" x="2000" y="-450" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
