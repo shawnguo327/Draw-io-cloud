@@ -79,7 +79,7 @@
         <mxCell id="wsXrPMJaeRBQqD8lpksv-30" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Reproject EPSG:2263 → WGS84&#xa;shapely.ops.transform" vertex="1">
           <mxGeometry height="102" width="260" x="800" y="1460" as="geometry" />
         </mxCell>
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-31" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;data/region_pits/nyc.json&lt;/b&gt;&#xa;GeoJSON FeatureCollection&#xa;65,831 features · 282 MB" vertex="1">
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-31" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="data/region_pits/nyc.json&#xa;GeoJSON FeatureCollection&#xa;65,831 features · 282 MB" vertex="1">
           <mxGeometry height="102" width="257" x="801" y="1612" as="geometry" />
         </mxCell>
         <mxCell id="wsXrPMJaeRBQqD8lpksv-32" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-18" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-20" value="">
