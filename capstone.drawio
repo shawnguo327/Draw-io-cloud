@@ -188,8 +188,8 @@
         <mxCell id="wsXrPMJaeRBQqD8lpksv-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="2000+ subway entrances" vertex="1">
           <mxGeometry height="30" width="150" x="709.17" y="-282.23" as="geometry" />
         </mxCell>
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="FFE:&lt;div&gt;realistic_ffe = first floor height - DEM at building&lt;/div&gt;&lt;div&gt;inundation_depth = sensor depth - realistic_ ffe&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="310" x="1120" y="-466.61" as="geometry" />
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" value="FFE:&lt;div&gt;realistic_ffe = first floor height - DEM at building&lt;/div&gt;&lt;div&gt;inundation_depth = sensor depth - realistic_ ffe&lt;/div&gt;&lt;div&gt;Major Inundation: &amp;gt;2.0ft&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="385" x="1000" y="-425" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
