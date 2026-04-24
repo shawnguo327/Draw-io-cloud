@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="rrjs3x73q6XKG6Un8orv">
-    <mxGraphModel dx="2043" dy="1965" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1313" dy="1487" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -188,8 +188,8 @@
         <mxCell id="wsXrPMJaeRBQqD8lpksv-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="2000+ subway entrances" vertex="1">
           <mxGeometry height="30" width="150" x="709.17" y="-282.23" as="geometry" />
         </mxCell>
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" value="FFE:&lt;div&gt;realistic_ffe = first floor height - DEM at building&lt;/div&gt;&lt;div&gt;inundation_depth = sensor depth - realistic_ ffe&lt;/div&gt;&lt;div&gt;Major Inundation: &amp;gt;2.0ft&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="75" width="385" x="1000" y="-425" as="geometry" />
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" value="FFE:&lt;div&gt;realistic_ffe = first floor height - DEM at building&lt;/div&gt;&lt;div&gt;inundation_depth = sensor depth - realistic_ ffe&lt;/div&gt;&lt;div&gt;Major Inundation: &amp;gt;2.0ft&lt;/div&gt;&lt;div&gt;Moderate Inundation: 1-2ft&lt;/div&gt;&lt;div&gt;Minor Inundation: 0-1ft&lt;/div&gt;&lt;div&gt;At Risk: near but not flooded&lt;/div&gt;&lt;div&gt;Safe: plenty of heights&lt;/div&gt;&lt;div&gt;Very safe: ...&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="260" x="1000" y="-425" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
