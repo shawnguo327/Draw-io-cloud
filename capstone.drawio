@@ -40,6 +40,117 @@
         <mxCell id="wsXrPMJaeRBQqD8lpksv-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="clear hole" vertex="1">
           <mxGeometry height="60" width="120" x="40" y="290" as="geometry" />
         </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-18" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;NYC 1ft LiDAR DEM&lt;/b&gt;&#xa;DSM .img, 93 GB&#xa;156k × 158k px" vertex="1">
+          <mxGeometry height="102" width="201" x="49" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-19" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;NYC Buildings&lt;/b&gt;&#xa;buildings.parquet&#xa;1,083,057 footprints" vertex="1">
+          <mxGeometry height="102" width="206" x="352" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-20" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Windowed read + downsample&#xa;rasterio.read(out_shape, average)&#xa;⇒ 32k × 32k at 5 ft&#xa;&lt;b&gt;991.6M cells&lt;/b&gt;" vertex="1">
+          <mxGeometry height="174" width="260" x="20" y="702" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-21" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Rasterize footprints&#xa;rasterio.features.rasterize&#xa;&lt;b&gt;barrier mask, 7.0 % cells&lt;/b&gt;" vertex="1">
+          <mxGeometry height="102" width="250" x="330" y="738" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-22" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;Apply barrier mask&lt;/b&gt;&#xa;elev[nodata ∪ building] = big&#xa;seed[interior] = big&#xa;seed[boundary] = elev" vertex="1">
+          <mxGeometry height="150" width="260" x="173" y="926" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-23" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;Depression fill&lt;/b&gt;&#xa;skimage.morphology.reconstruction&#xa;method = erosion&#xa;(Vincent &amp;amp; Soille, 1993)" vertex="1">
+          <mxGeometry height="126" width="315" x="145" y="1126" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-24" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="pit_depth = filled − elev&#xa;&lt;b&gt;44.75M cells &amp;gt; 1 ft (4.5 %)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="78" width="256" x="174" y="1302" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-25" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="8-connectivity labeling&#xa;scipy.ndimage.label&#xa;&lt;b&gt;321,813 components&lt;/b&gt;" vertex="1">
+          <mxGeometry height="102" width="224" x="190" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-26" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;Area filter ≥ 500 sqft&lt;/b&gt;&#xa;np.bincount(labels) ≥ 20 cells&#xa;⇒ 73,963 pits" vertex="1">
+          <mxGeometry height="126" width="260" x="173" y="1582" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-27" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Per-label stats (O(N))&#xa;scipy.ndimage.maximum / mean&#xa;max_depth, mean_depth, cell_count" vertex="1">
+          <mxGeometry height="150" width="260" x="173" y="1758" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-28" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;Max-depth cap ≤ 30 ft&lt;/b&gt;&#xa;drops enclosed-courtyard artefacts&#xa;⇒ 65,831 pits" vertex="1">
+          <mxGeometry height="126" width="260" x="173" y="1958" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-29" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Polygonize (no simplify)&#xa;rasterio.features.shapes&#xa;raw staircase outline preserved" vertex="1">
+          <mxGeometry height="126" width="260" x="173" y="2134" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-30" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Reproject EPSG:2263 → WGS84&#xa;shapely.ops.transform" vertex="1">
+          <mxGeometry height="102" width="260" x="173" y="2310" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-31" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;data/region_pits/nyc.json&lt;/b&gt;&#xa;GeoJSON FeatureCollection&#xa;65,831 features · 282 MB" vertex="1">
+          <mxGeometry height="102" width="257" x="174" y="2462" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-32" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-18" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-20" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-33" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-19" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-21" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-34" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-20" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.06;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-22" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="901" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-35" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-21" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.94;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-22" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="455" y="901" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-36" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-22" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-23" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-37" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-23" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-24" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-38" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-24" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-25" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-39" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-25" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-26" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-40" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-26" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-27" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-41" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-27" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-28" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-42" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-28" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-29" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-43" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-29" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-30" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-44" edge="1" parent="1" source="wsXrPMJaeRBQqD8lpksv-30" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="wsXrPMJaeRBQqD8lpksv-31" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
