@@ -40,6 +40,30 @@
         <mxCell id="wsXrPMJaeRBQqD8lpksv-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="2000+ subway entrances" vertex="1">
           <mxGeometry height="30" width="150" x="755.42" y="-212.23000000000002" as="geometry" />
         </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-83" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Applied refined Bathtub model to generate credible extents" vertex="1">
+          <mxGeometry height="71" width="120" x="1420" y="-651" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-84" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="Flood extents" vertex="1">
+          <mxGeometry height="109" width="180" x="1760" y="-660" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pre-process：&lt;div&gt;Find pits around target area and use them as natural boundaries&lt;/div&gt;" vertex="1">
+          <mxGeometry height="71" width="130" x="1250" y="-651" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Road passability metric" vertex="1">
+          <mxGeometry height="149" width="249" x="1570" y="-401.73" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" value="FFE:&lt;div&gt;realistic_ffe = first floor height - DEM at building&lt;/div&gt;&lt;div&gt;inundation_depth = sensor depth - realistic_ ffe&lt;/div&gt;&lt;div&gt;Major Inundation: &amp;gt;2.0ft&lt;/div&gt;&lt;div&gt;Moderate Inundation: 1-2ft&lt;/div&gt;&lt;div&gt;Minor Inundation: 0-1ft&lt;/div&gt;&lt;div&gt;At Risk: near but not flooded&lt;/div&gt;&lt;div&gt;Safe: plenty of heights&lt;/div&gt;&lt;div&gt;Very safe: ...&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="260" x="1258" y="-520" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-88" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="100" x="1970" y="-626" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-89" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="520" x="1540" y="-520" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-90" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" value="" vertex="1">
+          <mxGeometry height="70" width="220" x="1840" y="-412.23" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
