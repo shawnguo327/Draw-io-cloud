@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="rrjs3x73q6XKG6Un8orv">
-    <mxGraphModel dx="1240" dy="326" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2115" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -23,13 +23,16 @@
           <mxGeometry height="70" width="90" x="60" y="460" as="geometry" />
         </mxCell>
         <mxCell id="wsXrPMJaeRBQqD8lpksv-9" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="Flood extents" vertex="1">
-          <mxGeometry height="80" width="120" x="540" y="265" as="geometry" />
+          <mxGeometry height="80" width="120" x="530" y="290" as="geometry" />
         </mxCell>
         <mxCell id="wsXrPMJaeRBQqD8lpksv-10" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Building first floor;&lt;div&gt;basement;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="110" width="90" x="540" y="110" as="geometry" />
+          <mxGeometry height="110" width="90" x="570" y="120" as="geometry" />
         </mxCell>
         <mxCell id="wsXrPMJaeRBQqD8lpksv-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Car" vertex="1">
-          <mxGeometry height="60" width="120" x="540" y="390" as="geometry" />
+          <mxGeometry height="60" width="120" x="490" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-13" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+          <mxGeometry height="60" width="30" x="730" y="340" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
