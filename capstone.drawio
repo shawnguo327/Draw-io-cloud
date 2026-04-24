@@ -64,7 +64,7 @@
         <mxCell id="wsXrPMJaeRBQqD8lpksv-25" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="D8 Algorithm&#xa;8-connectivity labeling&#xa;scipy.ndimage.label&#xa;321,813 components" vertex="1">
           <mxGeometry height="102" width="224" x="817" y="580" as="geometry" />
         </mxCell>
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-26" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;Area filter ≥ 500 sqft&lt;/b&gt;&#xa;np.bincount(labels) ≥ 20 cells&#xa;⇒ 73,963 pits" vertex="1">
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-26" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Area filter ≥ 500 sqft&#xa;np.bincount(labels) ≥ 20 cells&#xa;⇒ 73,963 pits" vertex="1">
           <mxGeometry height="126" width="260" x="800" y="732" as="geometry" />
         </mxCell>
         <mxCell id="wsXrPMJaeRBQqD8lpksv-27" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Per-label stats (O(N))&#xa;scipy.ndimage.maximum / mean&#xa;max_depth, mean_depth, cell_count" vertex="1">
