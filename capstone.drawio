@@ -4,8 +4,8 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Bathtub model" vertex="1">
-          <mxGeometry height="60" width="120" x="1220" y="-591" as="geometry" />
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Applied refined Bathtub model to generate credible extents" vertex="1">
+          <mxGeometry height="71" width="120" x="1220" y="-591" as="geometry" />
         </mxCell>
         <mxCell id="wsXrPMJaeRBQqD8lpksv-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="modification" vertex="1">
           <mxGeometry height="60" width="120" x="1400" y="-591" as="geometry" />
@@ -13,8 +13,8 @@
         <mxCell id="wsXrPMJaeRBQqD8lpksv-9" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="Flood extents" vertex="1">
           <mxGeometry height="109" width="180" x="1570" y="-605" as="geometry" />
         </mxCell>
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pre-process：&lt;div&gt;- Fillout tiny pits&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="1050" y="-591" as="geometry" />
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pre-process：&lt;div&gt;Find pits around target area and use them as natural boundaries&lt;/div&gt;" vertex="1">
+          <mxGeometry height="71" width="130" x="1050" y="-591" as="geometry" />
         </mxCell>
         <mxCell id="wsXrPMJaeRBQqD8lpksv-18" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;NYC 1ft LiDAR DEM&lt;/b&gt;&#xa;DSM .img, 93 GB&#xa;156k × 158k px" vertex="1">
           <mxGeometry height="102" width="201" x="39" y="670" as="geometry" />
