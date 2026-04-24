@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="rrjs3x73q6XKG6Un8orv">
-    <mxGraphModel dx="1854" dy="1439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1617" dy="1376" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -151,9 +151,6 @@
         </mxCell>
         <mxCell id="wsXrPMJaeRBQqD8lpksv-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="sensor icon&lt;div&gt;building icon&lt;/div&gt;&lt;div&gt;mobility icon&lt;/div&gt;&lt;div&gt;MTA icon&lt;/div&gt;&lt;div&gt;worker icon&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="120" x="-60" y="-490" as="geometry" />
-        </mxCell>
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="model interpretation" vertex="1">
-          <mxGeometry height="60" width="120" x="100" y="-400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
