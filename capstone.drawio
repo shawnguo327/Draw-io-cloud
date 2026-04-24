@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="rrjs3x73q6XKG6Un8orv">
-    <mxGraphModel dx="8019" dy="1888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1799" dy="255" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -61,7 +61,7 @@
         <mxCell id="wsXrPMJaeRBQqD8lpksv-24" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="pit_depth = filled − elev&#xa;&lt;b&gt;44.75M cells &amp;gt; 1 ft (4.5 %)&lt;/b&gt;" vertex="1">
           <mxGeometry height="78" width="256" x="164" y="1422" as="geometry" />
         </mxCell>
-        <mxCell id="wsXrPMJaeRBQqD8lpksv-25" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="8-connectivity labeling&#xa;scipy.ndimage.label&#xa;&lt;b&gt;321,813 components&lt;/b&gt;" vertex="1">
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-25" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="D8 Algorithm&#xa;8-connectivity labeling&#xa;scipy.ndimage.label&#xa;321,813 components" vertex="1">
           <mxGeometry height="102" width="224" x="817" y="580" as="geometry" />
         </mxCell>
         <mxCell id="wsXrPMJaeRBQqD8lpksv-26" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;b&gt;Area filter ≥ 500 sqft&lt;/b&gt;&#xa;np.bincount(labels) ≥ 20 cells&#xa;⇒ 73,963 pits" vertex="1">
