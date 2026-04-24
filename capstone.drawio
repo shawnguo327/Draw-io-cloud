@@ -22,6 +22,15 @@
         <mxCell id="wsXrPMJaeRBQqD8lpksv-7" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Literature metrics" vertex="1">
           <mxGeometry height="70" width="90" x="60" y="460" as="geometry" />
         </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-9" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="Flood extents" vertex="1">
+          <mxGeometry height="80" width="120" x="540" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-10" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" value="Building first floor;&lt;div&gt;basement;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="90" x="540" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="wsXrPMJaeRBQqD8lpksv-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Car" vertex="1">
+          <mxGeometry height="60" width="120" x="540" y="390" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
