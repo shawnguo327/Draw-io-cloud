@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="oDSSeyHpDiqRt2YluFSl">
+    <mxGraphModel dx="2031" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-7" edge="1" parent="1" source="g81_ulEMyJ-JgBWC4m70-1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="g81_ulEMyJ-JgBWC4m70-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="挣钱" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-15" edge="1" parent="1" source="g81_ulEMyJ-JgBWC4m70-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="g81_ulEMyJ-JgBWC4m70-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="买房" vertex="1">
+          <mxGeometry height="60" width="120" x="-140" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-11" edge="1" parent="1" source="g81_ulEMyJ-JgBWC4m70-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="g81_ulEMyJ-JgBWC4m70-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="工作" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-9" edge="1" parent="1" source="g81_ulEMyJ-JgBWC4m70-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="g81_ulEMyJ-JgBWC4m70-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="住得远" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-14" edge="1" parent="1" source="g81_ulEMyJ-JgBWC4m70-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="g81_ulEMyJ-JgBWC4m70-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="通勤时间长" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-8" edge="1" parent="1" source="g81_ulEMyJ-JgBWC4m70-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="g81_ulEMyJ-JgBWC4m70-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="便宜房子" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-13" edge="1" parent="1" source="g81_ulEMyJ-JgBWC4m70-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="g81_ulEMyJ-JgBWC4m70-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="劳神" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-17" edge="1" parent="1" source="g81_ulEMyJ-JgBWC4m70-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="g81_ulEMyJ-JgBWC4m70-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="疲惫，缺乏精力" vertex="1">
+          <mxGeometry height="60" width="120" x="490" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="易怒，易急躁" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="g81_ulEMyJ-JgBWC4m70-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="310" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
