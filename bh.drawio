@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="dQhYHDXbdkFcSWuIQUrr">
-    <mxGraphModel dx="238" dy="322" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="855" dy="1158" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -16,8 +16,17 @@
         <mxCell id="31ud5ujLwNF54YdYqB_e-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="1. 距离自适应离群点铝箔&lt;div&gt;稀疏局部干扰（雨/雪）&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="100" y="440" as="geometry" />
         </mxCell>
-        <mxCell id="31ud5ujLwNF54YdYqB_e-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="140" y="530" as="geometry" />
+        <mxCell id="31ud5ujLwNF54YdYqB_e-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="2.柱面三视角逐点分类&lt;div&gt;统一退化（雨/雪/雾/多反射）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="3.TripleMixer三域混合网络&lt;div&gt;高频弥散（烟雾/扬尘）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="字段恢复与边界复核&lt;div&gt;（时间戳/线束编号/反射强度回填边界置信度点经邻域/连续帧一致性复核）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="380" x="100" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="净化点云输出&lt;div&gt;（+干扰点集合+逐点分类结果+过滤前后对比+运行统计信息）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="410" x="100" y="610" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
