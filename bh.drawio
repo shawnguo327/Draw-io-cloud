@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="dQhYHDXbdkFcSWuIQUrr">
+    <mxGraphModel dx="238" dy="322" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="31ud5ujLwNF54YdYqB_e-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="原始点云（LiDAR单帧、连续帧+反射强度等属性）" vertex="1">
+          <mxGeometry height="60" width="310" x="100" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="31ud5ujLwNF54YdYqB_e-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="预处理&lt;div&gt;（坐标统一 / 距离裁剪 / 无效值剔除 / 强度归一化）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="310" x="100" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="31ud5ujLwNF54YdYqB_e-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="多域净化后端" vertex="1">
+          <mxGeometry height="60" width="310" x="100" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="31ud5ujLwNF54YdYqB_e-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="1. 距离自适应离群点铝箔&lt;div&gt;稀疏局部干扰（雨/雪）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="100" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="31ud5ujLwNF54YdYqB_e-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="530" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
