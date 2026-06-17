@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="dQhYHDXbdkFcSWuIQUrr">
-    <mxGraphModel dx="1777" dy="858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5959" dy="4632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -43,29 +43,26 @@
         <mxCell id="BFLlxgR6k2uAPhuwH8G4-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="净化点云输出&lt;div&gt;（+干扰点集合+逐点分类结果+过滤前后对比+运行统计信息）&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="410" x="570" y="610" as="geometry" />
         </mxCell>
-        <mxCell id="BFLlxgR6k2uAPhuwH8G4-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="原始点云（LiDAR单帧、连续帧+反射强度等属性）" vertex="1">
-          <mxGeometry height="60" width="310" x="1050" y="190" as="geometry" />
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="观测/状态/指令输入" vertex="1">
+          <mxGeometry height="60" width="510" x="1040" y="20" as="geometry" />
         </mxCell>
-        <mxCell id="BFLlxgR6k2uAPhuwH8G4-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="预处理&lt;div&gt;（坐标统一 / 距离裁剪 / 无效值剔除 / 强度归一化）&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="310" x="1050" y="270" as="geometry" />
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="视觉前置审查&lt;div&gt;(VLM,行动前)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" x="1040" y="100" as="geometry" />
         </mxCell>
-        <mxCell id="BFLlxgR6k2uAPhuwH8G4-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="多域净化后端" vertex="1">
-          <mxGeometry height="60" width="310" x="1050" y="350" as="geometry" />
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="{通行/谨慎/停止}判别+危险类别+恢复建议信号" vertex="1">
+          <mxGeometry height="60" width="120" x="1040" y="380" as="geometry" />
         </mxCell>
-        <mxCell id="BFLlxgR6k2uAPhuwH8G4-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="1. 距离自适应离群点铝箔&lt;div&gt;稀疏局部干扰（雨/雪）&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="1050" y="440" as="geometry" />
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="轨迹一致性判别&lt;div&gt;(D*,运行中·导航规划层)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="130" x="1231" y="100" as="geometry" />
         </mxCell>
-        <mxCell id="BFLlxgR6k2uAPhuwH8G4-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="2.柱面三视角逐点分类&lt;div&gt;统一退化（雨/雪/雾/多反射）&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="1170" y="440" as="geometry" />
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="历史规划路径+剩余段+实际轨迹+运动/控制/感知数据" vertex="1">
+          <mxGeometry height="70" width="139" x="1231" y="220" as="geometry" />
         </mxCell>
-        <mxCell id="BFLlxgR6k2uAPhuwH8G4-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="3.TripleMixer三域混合网络&lt;div&gt;高频弥散（烟雾/扬尘）&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="1290" y="440" as="geometry" />
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="融合决策&lt;div&gt;统一分级恢复出口&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="450" x="1100" y="470" as="geometry" />
         </mxCell>
-        <mxCell id="BFLlxgR6k2uAPhuwH8G4-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="字段恢复与边界复核&lt;div&gt;（时间戳/线束编号/反射强度回填边界置信度点经邻域/连续帧一致性复核）&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="380" x="1050" y="530" as="geometry" />
-        </mxCell>
-        <mxCell id="BFLlxgR6k2uAPhuwH8G4-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="净化点云输出&lt;div&gt;（+干扰点集合+逐点分类结果+过滤前后对比+运行统计信息）&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="410" x="1050" y="610" as="geometry" />
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;nbsp; 恢复信号：降级·停止信号 + 告警状态 + 测试指标" vertex="1">
+          <mxGeometry height="60" width="530" x="1040" y="620" as="geometry" />
         </mxCell>
         <mxCell id="BFLlxgR6k2uAPhuwH8G4-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="点云投影到相机坐标系" vertex="1">
           <mxGeometry height="60" width="120" x="-90" y="350" as="geometry" />
@@ -108,6 +105,42 @@
         </mxCell>
         <mxCell id="BFLlxgR6k2uAPhuwH8G4-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="拦截急停(停止 / 安全站立 / 后撤 / 急停)" vertex="1">
           <mxGeometry height="60" width="120" x="180" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="图像/短序列&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="1040" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="TinyLLaVA 危险识别&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="1040" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="DTW/几何偏差/拓扑签名+时序残差" vertex="1">
+          <mxGeometry height="60" width="120" x="1236" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="异常判别信号" vertex="1">
+          <mxGeometry height="60" width="120" x="1236" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="本体失控判别(运行中·运动控制层)" vertex="1">
+          <mxGeometry height="60" width="120" x="1400" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="关节/IMU/姿态/策略输出/接触环境" vertex="1">
+          <mxGeometry height="60" width="120" x="1420" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="FFT·STFT/小波/jerk/动作残差" vertex="1">
+          <mxGeometry height="60" width="120" x="1420" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="失控判别信号" vertex="1">
+          <mxGeometry height="60" width="120" x="1420" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="一级 重规划/安全降级" vertex="1">
+          <mxGeometry height="60" width="120" x="1080" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="二级 控制器重置/降速稳住" vertex="1">
+          <mxGeometry height="60" width="120" x="1220" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="三级 停止·姿态恢复" vertex="1">
+          <mxGeometry height="60" width="120" x="1356" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="BFLlxgR6k2uAPhuwH8G4-48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="四级 任务暂停/人工接管" vertex="1">
+          <mxGeometry height="60" width="120" x="1490" y="540" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
