@@ -1,9 +1,445 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="As56qsyu81wIjHC9ib4n">
-    <mxGraphModel dx="934" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4670" dy="3220" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;flowchart TB\n    U[\&quot;用户 / 研究者\&quot;]\n\n    subgraph DESIGN[\&quot;用户设计\&quot;]\n        A[\&quot;设计干预 / 攻击&lt;br/&gt;目标、动作、预算、时机、持续时间\&quot;]\n        M[\&quot;设计待验证指标&lt;br/&gt;从观测信号估计韧性\&quot;]\n        P[\&quot;指定评测协议&lt;br/&gt;正常与异常状态、功能目标&lt;br/&gt;扰动分布、观察期、重复次数\&quot;]\n    end\n\n    U --&gt; A\n    U --&gt; M\n    U --&gt; P\n\n    subgraph BENCH[\&quot;我们的 Bench\&quot;]\n        API[\&quot;干预接口&lt;br/&gt;检查动作合法性并执行\&quot;]\n        INIT[\&quot;构建实验场景&lt;br/&gt;网络、动力学、初始状态\&quot;]\n        PAIR[\&quot;生成配对实验&lt;br/&gt;相同初始快照与外部扰动\&quot;]\n        C[\&quot;对照组&lt;br/&gt;不施加攻击\&quot;]\n        T[\&quot;攻击组&lt;br/&gt;施加攻击\&quot;]\n        LOG[\&quot;记录与传递信号\&quot;]\n\n        OBS[\&quot;对外观测信号&lt;br/&gt;节点时间序列、可观测功能输出\&quot;]\n        TRUTH[\&quot;评测端完整记录&lt;br/&gt;真实状态、转换时刻&lt;br/&gt;攻击成本、功能损失\&quot;]\n\n        PROBE[\&quot;可选：攻击结束后&lt;br/&gt;对两组施加相同标准扰动&lt;br/&gt;检验剩余抗扰与恢复能力\&quot;]\n\n        INIT --&gt; PAIR\n        PAIR --&gt; C\n        PAIR --&gt; T\n        API --&gt;|\&quot;攻击信号\&quot;| T\n        C --&gt; LOG\n        T --&gt; LOG\n        C -.-&gt; PROBE\n        T -.-&gt; PROBE\n        PROBE --&gt; LOG\n        LOG --&gt; OBS\n        LOG --&gt; TRUTH\n    end\n\n    A --&gt;|\&quot;提交干预策略\&quot;| API\n    P --&gt;|\&quot;配置实验\&quot;| INIT\n\n    subgraph EVAL[\&quot;独立评估与交叉验证\&quot;]\n        SCORE[\&quot;运行用户指标&lt;br/&gt;输出韧性分数及其变化\&quot;]\n        EFFECT[\&quot;直接评估攻击效果&lt;br/&gt;两组失效概率、失效时间&lt;br/&gt;功能损失与恢复表现之差\&quot;]\n        CHECK[\&quot;交叉验证&lt;br/&gt;指标变化能否反映直接实验结果？&lt;br/&gt;在哪些场景有效或失效？\&quot;]\n        REPORT[\&quot;评测报告&lt;br/&gt;攻击效果与成本&lt;br/&gt;指标有效性、误差与适用范围\&quot;]\n\n        SCORE --&gt; CHECK\n        EFFECT --&gt; CHECK\n        EFFECT --&gt; REPORT\n        CHECK --&gt; REPORT\n    end\n\n    M --&gt;|\&quot;提交指标算法\&quot;| SCORE\n    OBS --&gt;|\&quot;传递可观测数据\&quot;| SCORE\n    TRUTH --&gt;|\&quot;提供独立结果依据\&quot;| EFFECT\n    P --&gt;|\&quot;预先定义成功与失效判据\&quot;| EFFECT\n\n    REPORT --&gt;|\&quot;反馈证据\&quot;| U&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="N5csdZ2VvLDz3BB5LHLD-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="用户设计" mermaidId="n:DESIGN" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="用户设计" id="N5csdZ2VvLDz3BB5LHLD-2">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-1" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="1398" width="592" x="875" y="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="设计干预 / 攻击&#xa;目标、动作、预算、时机、持续时间" mermaidId="n:A" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="设计干预 / 攻击&#xa;目标、动作、预算、时机、持续时间" id="N5csdZ2VvLDz3BB5LHLD-3">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-2" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="316" x="138" y="45" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="设计待验证指标&#xa;从观测信号估计韧性" mermaidId="n:M" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="设计待验证指标&#xa;从观测信号估计韧性" id="N5csdZ2VvLDz3BB5LHLD-4">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-2" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="204" x="353" y="1290" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="指定评测协议&#xa;正常与异常状态、功能目标&#xa;扰动分布、观察期、重复次数" mermaidId="n:P" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="指定评测协议&#xa;正常与异常状态、功能目标&#xa;扰动分布、观察期、重复次数" id="N5csdZ2VvLDz3BB5LHLD-5">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-2" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="93" width="268" x="35" y="1280" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="我们的 Bench" mermaidId="n:BENCH" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="我们的 Bench" id="N5csdZ2VvLDz3BB5LHLD-6">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-1" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="1832" width="1017" x="1487" y="197" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="干预接口&#xa;检查动作合法性并执行" mermaidId="n:API" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="干预接口&#xa;检查动作合法性并执行" id="N5csdZ2VvLDz3BB5LHLD-7">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-6" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="220" x="452" y="45" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="构建实验场景&#xa;网络、动力学、初始状态" mermaidId="n:INIT" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="构建实验场景&#xa;网络、动力学、初始状态" id="N5csdZ2VvLDz3BB5LHLD-8">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-6" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="236" x="746" y="1310" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="生成配对实验&#xa;相同初始快照与外部扰动" mermaidId="n:PAIR" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="生成配对实验&#xa;相同初始快照与外部扰动" id="N5csdZ2VvLDz3BB5LHLD-9">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-6" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="236" x="669" y="1468" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="对照组&#xa;不施加攻击" mermaidId="n:C" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="对照组&#xa;不施加攻击" id="N5csdZ2VvLDz3BB5LHLD-10">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-6" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="140" x="641" y="1591" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="攻击组&#xa;施加攻击" mermaidId="n:T" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="攻击组&#xa;施加攻击" id="N5csdZ2VvLDz3BB5LHLD-11">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-6" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="124" x="500" y="187" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="记录与传递信号" mermaidId="n:LOG" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="记录与传递信号" id="N5csdZ2VvLDz3BB5LHLD-12">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-6" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="172" x="337" y="310" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="对外观测信号&#xa;节点时间序列、可观测功能输出" mermaidId="n:OBS" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="对外观测信号&#xa;节点时间序列、可观测功能输出" id="N5csdZ2VvLDz3BB5LHLD-13">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-6" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="284" x="35" y="414" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="评测端完整记录&#xa;真实状态、转换时刻&#xa;攻击成本、功能损失" mermaidId="n:TRUTH" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="评测端完整记录&#xa;真实状态、转换时刻&#xa;攻击成本、功能损失" id="N5csdZ2VvLDz3BB5LHLD-14">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-6" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="93" width="204" x="252" y="1113" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="可选：攻击结束后&#xa;对两组施加相同标准扰动&#xa;检验剩余抗扰与恢复能力" mermaidId="n:PROBE" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="可选：攻击结束后&#xa;对两组施加相同标准扰动&#xa;检验剩余抗扰与恢复能力" id="N5csdZ2VvLDz3BB5LHLD-15">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-6" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="93" width="236" x="444" y="1714" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:INIT-&gt;PAIR#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.69;entryY=0;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-16">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-6" source="N5csdZ2VvLDz3BB5LHLD-8" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.69;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-9">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="864" y="1418" />
+                <mxPoint x="864" y="1443" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:PAIR-&gt;C#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.82;entryY=0;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-17">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-6" source="N5csdZ2VvLDz3BB5LHLD-9" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.82;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-10">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="787" y="1566" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:PAIR-&gt;T#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.31;exitY=0;entryX=1;entryY=0.85;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-18">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-6" source="N5csdZ2VvLDz3BB5LHLD-9" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.31;exitY=0;entryX=1;entryY=0.85;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-11">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="711" y="1443" />
+                <mxPoint x="711" y="1418" />
+                <mxPoint x="711" y="1347" />
+                <mxPoint x="711" y="1266" />
+                <mxPoint x="711" y="1231" />
+                <mxPoint x="711" y="1160" />
+                <mxPoint x="711" y="1088" />
+                <mxPoint x="711" y="1036" />
+                <mxPoint x="711" y="975" />
+                <mxPoint x="711" y="894" />
+                <mxPoint x="711" y="822" />
+                <mxPoint x="711" y="751" />
+                <mxPoint x="711" y="679" />
+                <mxPoint x="711" y="618" />
+                <mxPoint x="711" y="556" />
+                <mxPoint x="711" y="522" />
+                <mxPoint x="711" y="451" />
+                <mxPoint x="711" y="389" />
+                <mxPoint x="711" y="337" />
+                <mxPoint x="711" y="285" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="攻击信号" mermaidId="e:API-&gt;T#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="攻击信号" id="N5csdZ2VvLDz3BB5LHLD-19">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-6" source="N5csdZ2VvLDz3BB5LHLD-7" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-11">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:C-&gt;LOG#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.13;exitY=0;entryX=1;entryY=0.91;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-20">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-6" source="N5csdZ2VvLDz3BB5LHLD-10" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.13;exitY=0;entryX=1;entryY=0.91;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-12">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="624" y="1566" />
+                <mxPoint x="624" y="1505" />
+                <mxPoint x="624" y="1443" />
+                <mxPoint x="624" y="1418" />
+                <mxPoint x="624" y="1347" />
+                <mxPoint x="624" y="1266" />
+                <mxPoint x="624" y="1231" />
+                <mxPoint x="624" y="1160" />
+                <mxPoint x="624" y="1088" />
+                <mxPoint x="624" y="1036" />
+                <mxPoint x="624" y="975" />
+                <mxPoint x="624" y="894" />
+                <mxPoint x="624" y="822" />
+                <mxPoint x="624" y="751" />
+                <mxPoint x="624" y="679" />
+                <mxPoint x="624" y="618" />
+                <mxPoint x="624" y="556" />
+                <mxPoint x="624" y="522" />
+                <mxPoint x="624" y="451" />
+                <mxPoint x="624" y="389" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:T-&gt;LOG#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.88;entryX=0.5;entryY=0;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-21">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-6" source="N5csdZ2VvLDz3BB5LHLD-11" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.88;entryX=0.5;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-12">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="423" y="285" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:C-&gt;PROBE#0" mermaidBaseStyle="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.91;entryY=0;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-22">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-6" source="N5csdZ2VvLDz3BB5LHLD-10" style="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.91;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-15">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="711" y="1689" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:T-&gt;PROBE#0" mermaidBaseStyle="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-23">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-6" source="N5csdZ2VvLDz3BB5LHLD-11" style="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-15">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:PROBE-&gt;LOG#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.31;exitY=0;entryX=0.7;entryY=1;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-24">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-6" source="N5csdZ2VvLDz3BB5LHLD-15" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.31;exitY=0;entryX=0.7;entryY=1;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-12">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="491" y="1689" />
+                <mxPoint x="491" y="1628" />
+                <mxPoint x="491" y="1566" />
+                <mxPoint x="491" y="1505" />
+                <mxPoint x="491" y="1443" />
+                <mxPoint x="491" y="1418" />
+                <mxPoint x="491" y="1347" />
+                <mxPoint x="491" y="1266" />
+                <mxPoint x="491" y="1231" />
+                <mxPoint x="491" y="1160" />
+                <mxPoint x="491" y="1088" />
+                <mxPoint x="491" y="1036" />
+                <mxPoint x="491" y="975" />
+                <mxPoint x="491" y="894" />
+                <mxPoint x="491" y="822" />
+                <mxPoint x="491" y="751" />
+                <mxPoint x="491" y="679" />
+                <mxPoint x="491" y="618" />
+                <mxPoint x="491" y="556" />
+                <mxPoint x="491" y="522" />
+                <mxPoint x="491" y="451" />
+                <mxPoint x="491" y="389" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:LOG-&gt;OBS#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.83;entryX=0.5;entryY=0;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-25">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-6" source="N5csdZ2VvLDz3BB5LHLD-12" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.83;entryX=0.5;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-13">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="177" y="389" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:LOG-&gt;TRUTH#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.29;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-26">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-6" source="N5csdZ2VvLDz3BB5LHLD-12" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.29;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-14">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="354" y="389" />
+                <mxPoint x="354" y="451" />
+                <mxPoint x="354" y="522" />
+                <mxPoint x="354" y="556" />
+                <mxPoint x="354" y="618" />
+                <mxPoint x="354" y="679" />
+                <mxPoint x="354" y="751" />
+                <mxPoint x="354" y="822" />
+                <mxPoint x="354" y="894" />
+                <mxPoint x="354" y="975" />
+                <mxPoint x="354" y="1036" />
+                <mxPoint x="354" y="1088" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="独立评估与交叉验证" mermaidId="n:EVAL" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="独立评估与交叉验证" id="N5csdZ2VvLDz3BB5LHLD-27">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-1" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="882" width="445" x="30" y="733" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="运行用户指标&#xa;输出韧性分数及其变化" mermaidId="n:SCORE" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="运行用户指标&#xa;输出韧性分数及其变化" id="N5csdZ2VvLDz3BB5LHLD-28">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-27" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="220" x="190" y="45" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="直接评估攻击效果&#xa;两组失效概率、失效时间&#xa;功能损失与恢复表现之差" mermaidId="n:EFFECT" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="直接评估攻击效果&#xa;两组失效概率、失效时间&#xa;功能损失与恢复表现之差" id="N5csdZ2VvLDz3BB5LHLD-29">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-27" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="93" width="236" x="35" y="764" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="交叉验证&#xa;指标变化能否反映直接实验结果？&#xa;在哪些场景有效或失效？" mermaidId="n:CHECK" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="交叉验证&#xa;指标变化能否反映直接实验结果？&#xa;在哪些场景有效或失效？" id="N5csdZ2VvLDz3BB5LHLD-30">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-27" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="93" width="300" x="41" y="168" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="评测报告&#xa;攻击效果与成本&#xa;指标有效性、误差与适用范围" mermaidId="n:REPORT" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="评测报告&#xa;攻击效果与成本&#xa;指标有效性、误差与适用范围" id="N5csdZ2VvLDz3BB5LHLD-31">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-27" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="93" width="268" x="142" y="311" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:SCORE-&gt;CHECK#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.2;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-32">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-27" source="N5csdZ2VvLDz3BB5LHLD-28" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.2;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-30">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="191" y="143" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:EFFECT-&gt;CHECK#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.39;exitY=0;entryX=0.32;entryY=1;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-33">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-27" source="N5csdZ2VvLDz3BB5LHLD-29" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.39;exitY=0;entryX=0.32;entryY=1;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-30">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="107" y="730" />
+                <mxPoint x="107" y="695" />
+                <mxPoint x="107" y="624" />
+                <mxPoint x="107" y="552" />
+                <mxPoint x="107" y="500" />
+                <mxPoint x="107" y="439" />
+                <mxPoint x="107" y="358" />
+                <mxPoint x="107" y="286" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:EFFECT-&gt;REPORT#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.34;exitY=0;entryX=0.09;entryY=1;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-34">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-27" source="N5csdZ2VvLDz3BB5LHLD-29" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.34;exitY=0;entryX=0.09;entryY=1;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-31">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="87" y="730" />
+                <mxPoint x="87" y="695" />
+                <mxPoint x="87" y="624" />
+                <mxPoint x="87" y="552" />
+                <mxPoint x="87" y="500" />
+                <mxPoint x="87" y="439" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:CHECK-&gt;REPORT#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.68;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-35">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-27" source="N5csdZ2VvLDz3BB5LHLD-30" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.68;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-31">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="276" y="286" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="用户 / 研究者" mermaidId="n:U" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="用户 / 研究者" id="N5csdZ2VvLDz3BB5LHLD-36">
+          <mxCell parent="N5csdZ2VvLDz3BB5LHLD-1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="158" x="682" y="1206" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:U-&gt;A#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.22;entryX=0.36;entryY=1;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-37">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-1" source="N5csdZ2VvLDz3BB5LHLD-36" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.22;entryX=0.36;entryY=1;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-3">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1085" y="1172" />
+                <mxPoint x="1085" y="1091" />
+                <mxPoint x="1085" y="1019" />
+                <mxPoint x="1085" y="948" />
+                <mxPoint x="1085" y="876" />
+                <mxPoint x="1085" y="815" />
+                <mxPoint x="1085" y="753" />
+                <mxPoint x="1085" y="719" />
+                <mxPoint x="1085" y="648" />
+                <mxPoint x="1085" y="586" />
+                <mxPoint x="1085" y="534" />
+                <mxPoint x="1085" y="482" />
+                <mxPoint x="1085" y="421" />
+                <mxPoint x="1085" y="350" />
+                <mxPoint x="1085" y="279" />
+                <mxPoint x="1085" y="217" />
+                <mxPoint x="1085" y="183" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:U-&gt;M#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.63;entryX=0.5;entryY=0;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-38">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-1" source="N5csdZ2VvLDz3BB5LHLD-36" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.63;entryX=0.5;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1330" y="1285" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:U-&gt;P#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.78;entryX=0.5;entryY=0;" mermaidBaseValue="" id="N5csdZ2VvLDz3BB5LHLD-39">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-1" source="N5csdZ2VvLDz3BB5LHLD-36" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.78;entryX=0.5;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-5">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1044" y="1285" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="提交干预策略" mermaidId="e:A-&gt;API#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.6;exitY=1;entryX=0;entryY=0.38;" mermaidBaseValue="提交干预策略" id="N5csdZ2VvLDz3BB5LHLD-40">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-1" source="N5csdZ2VvLDz3BB5LHLD-3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.6;exitY=1;entryX=0;entryY=0.38;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-7">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1234" y="183" />
+                <mxPoint x="1234" y="217" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="配置实验" mermaidId="e:P-&gt;INIT#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.97;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="配置实验" id="N5csdZ2VvLDz3BB5LHLD-41">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-1" source="N5csdZ2VvLDz3BB5LHLD-5" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.97;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-8">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1236" y="1428" />
+                <mxPoint x="2351" y="1463" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="提交指标算法" mermaidId="e:M-&gt;SCORE#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.37;entryX=1;entryY=0.99;" mermaidBaseValue="提交指标算法" id="N5csdZ2VvLDz3BB5LHLD-42">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-1" source="N5csdZ2VvLDz3BB5LHLD-4" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.37;entryX=1;entryY=0.99;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-28">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="523" y="1285" />
+                <mxPoint x="523" y="1233" />
+                <mxPoint x="523" y="1172" />
+                <mxPoint x="523" y="1091" />
+                <mxPoint x="523" y="1019" />
+                <mxPoint x="523" y="948" />
+                <mxPoint x="523" y="876" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="传递可观测数据" mermaidId="e:OBS-&gt;SCORE#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=1;entryY=0.42;" mermaidBaseValue="传递可观测数据" id="N5csdZ2VvLDz3BB5LHLD-43">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-1" source="N5csdZ2VvLDz3BB5LHLD-13" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=1;entryY=0.42;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-28">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1664" y="719" />
+                <mxPoint x="1664" y="753" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="提供独立结果依据" mermaidId="e:TRUTH-&gt;EFFECT#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=1;entryY=0.44;" mermaidBaseValue="提供独立结果依据" id="N5csdZ2VvLDz3BB5LHLD-44">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-1" source="N5csdZ2VvLDz3BB5LHLD-14" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=1;entryY=0.44;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-29">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1841" y="1428" />
+                <mxPoint x="1841" y="1463" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="预先定义成功与失效判据" mermaidId="e:P-&gt;EFFECT#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.32;exitY=1;entryX=0.99;entryY=0;" mermaidBaseValue="预先定义成功与失效判据" id="N5csdZ2VvLDz3BB5LHLD-45">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-1" source="N5csdZ2VvLDz3BB5LHLD-5" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.32;exitY=1;entryX=0.99;entryY=0;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-29">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="970" y="1428" />
+                <mxPoint x="384" y="1463" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="反馈证据" mermaidId="e:REPORT-&gt;U#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.94;entryX=0;entryY=0.02;" mermaidBaseValue="反馈证据" id="N5csdZ2VvLDz3BB5LHLD-46">
+          <mxCell edge="1" parent="N5csdZ2VvLDz3BB5LHLD-1" source="N5csdZ2VvLDz3BB5LHLD-31" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.94;entryX=0;entryY=0.02;rounded=0;" target="N5csdZ2VvLDz3BB5LHLD-36">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="575" y="1172" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
