@@ -29,13 +29,58 @@
           <mxGeometry height="60" width="120" x="440" y="270" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="最近已解决的任务" vertex="1">
-          <mxGeometry height="60" width="120" x="-70" y="555" as="geometry" />
+          <mxGeometry height="60" width="120" x="-70" y="665" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="成熟解决方案" vertex="1">
           <mxGeometry height="60" width="120" x="-70" y="375" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="缺口" vertex="1">
+          <mxGeometry height="60" width="120" x="-70" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="普通的交换顺序求平均并无严格保障" vertex="1">
+          <mxGeometry height="60" width="120" x="100" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="100" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="模型是否可以评测更强模型的" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="任务与指标" vertex="1">
           <mxGeometry height="60" width="120" x="-70" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="MT-Bench" vertex="1">
+          <mxGeometry height="60" width="120" x="100" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Arena-Hard，PRM800K" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="领域judge" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="580" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
