@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="xN2g97uZQO7fY8nZSaSu">
-    <mxGraphModel dx="2479" dy="2076" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2434" dy="2051" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -87,6 +87,9 @@
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="二元选项" vertex="1">
           <mxGeometry height="60" width="120" x="230" y="-270" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="为什么标签一般都是二元？不加入IDK？&lt;div&gt;因为显示标签输出并不如隐式获取置信度&lt;/div&gt;&lt;div&gt;IDK和其他标签在评测不同的东西，不是正确率而是自身的置信度&lt;/div&gt;&lt;div&gt;他无法被很好纳入后续决策，只在最难的地方IDK&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="700" x="1210" y="-30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
