@@ -22,8 +22,11 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="位置偏差" vertex="1">
           <mxGeometry height="60" width="120" x="100" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="错误" vertex="1">
           <mxGeometry height="60" width="120" x="270" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="reward hacking错误信号长期传播，影响深远" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="270" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
