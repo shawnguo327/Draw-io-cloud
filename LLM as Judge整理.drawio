@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="xN2g97uZQO7fY8nZSaSu">
-    <mxGraphModel dx="1934" dy="1777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2293" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -120,6 +120,9 @@
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-38" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;meta charset=&quot;utf-8&quot;&gt;judge 主动调工具查环境状态 [74]；低假阳性验证器 [80]；多模态位置偏差诊断 [52]" vertex="1">
           <mxGeometry height="60" width="190" x="610" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-39" parent="1" style="whiteSpace=wrap;html=1;" value="idea2:" vertex="1">
+          <mxGeometry height="60" width="120" x="920" y="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
