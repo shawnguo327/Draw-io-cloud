@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="xN2g97uZQO7fY8nZSaSu">
-    <mxGraphModel dx="2434" dy="2051" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3040" dy="2384" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -90,6 +90,9 @@
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;idea1:为什么标签一般都是二元？不加入IDK？&lt;/b&gt;&lt;div&gt;因为显示标签输出并不如隐式获取置信度&lt;/div&gt;&lt;div&gt;IDK和其他标签在评测不同的东西，不是正确率而是自身的置信度&lt;/div&gt;&lt;div&gt;他无法被很好纳入后续决策，只在最难的地方IDK，&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;直接丢弃这些样本会让 win rate 和排行榜产生系统性偏差&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;这样子混淆了人类也不一致与难度高两类题目&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="140" width="700" x="920" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;h1 class=&quot;title mathjax&quot; style=&quot;font-weight: 700; line-height: 27.9936px; display: block; margin-block: 12px; margin: 0.25em 0px 12px 20px; margin-inline: 20px 0px; color: rgb(0, 0, 0); font-family: &amp;quot;Lucida Grande&amp;quot;, Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;WebDevJudge&lt;/font&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="665" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
