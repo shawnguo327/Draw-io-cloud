@@ -52,11 +52,11 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="任务与指标" vertex="1">
           <mxGeometry height="60" width="120" x="-70" y="470" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="MT-Bench，Arena-Hard，" vertex="1">
-          <mxGeometry height="60" width="120" x="100" y="470" as="geometry" />
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="MT-Bench [1]、AlpacaEval LC [2]、Arena-Hard [3]；&lt;div&gt;指标：人类一致率，以及位置一致性 RS/PC/PF [14]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="100" y="470" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PRM800K，JudgeBench" vertex="1">
-          <mxGeometry height="60" width="120" x="270" y="470" as="geometry" />
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PRM800K [7]、JudgeBench [11]、HumanEval / SWE-bench；指标：覆盖率 pass@N 与选择准确率 [69]" vertex="1">
+          <mxGeometry height="100" width="120" x="270" y="470" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="可验证领域用 RLVR [18]；不可验证领域用 rubric 奖励、生成式 RM、RM 集成 [19,56]" vertex="1">
           <mxGeometry height="60" width="120" x="440" y="375" as="geometry" />
