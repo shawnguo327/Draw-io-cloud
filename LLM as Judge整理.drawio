@@ -40,10 +40,10 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="普通的交换顺序求平均并无严格保障" vertex="1">
           <mxGeometry height="60" width="120" x="100" y="580" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="交换顺序取平均、评审团 [12]、长度控制 [2]、细粒度 rubric" vertex="1">
           <mxGeometry height="60" width="120" x="100" y="375" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="程序化外部信号（单元测试、答案比对）加 best-of-N / self-consistency [26,71]" vertex="1">
           <mxGeometry height="60" width="120" x="270" y="375" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="模型是否可以评测更强模型的" vertex="1">
@@ -58,7 +58,7 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PRM800K，JudgeBench" vertex="1">
           <mxGeometry height="60" width="120" x="270" y="470" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="可验证领域用 RLVR [18]；不可验证领域用 rubric 奖励、生成式 RM、RM 集成 [19,56]" vertex="1">
           <mxGeometry height="60" width="120" x="440" y="375" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="领域judge" vertex="1">
