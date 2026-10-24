@@ -28,6 +28,15 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="reward hacking错误信号长期传播，影响深远" vertex="1">
           <mxGeometry height="60" width="120" x="440" y="270" as="geometry" />
         </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="最近已解决的任务" vertex="1">
+          <mxGeometry height="60" width="120" x="-70" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="成熟解决方案" vertex="1">
+          <mxGeometry height="60" width="120" x="-70" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="缺口" vertex="1">
+          <mxGeometry height="60" width="120" x="-70" y="470" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
