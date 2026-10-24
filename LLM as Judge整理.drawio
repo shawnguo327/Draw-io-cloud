@@ -70,11 +70,11 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="程序化状态检查优先，再加受约束的 LLM checklist [78,79]；安全用专用分类器" vertex="1">
           <mxGeometry height="60" width="170" x="610" y="375" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="610" y="470" as="geometry" />
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="AgentRewardBench [76]、AgentHorizon [75]、VL-RewardBench [48]、WebDevJudge；指标：判定精确率、平衡准确率" vertex="1">
+          <mxGeometry height="80" width="190" x="610" y="470" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="440" y="470" as="geometry" />
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="RewardBench 1/2 [54,55]、PPE [60]；指标：pairwise 准确率、下游 best-of-N / PPO 质量" vertex="1">
+          <mxGeometry height="90" width="120" x="440" y="470" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
           <mxGeometry height="60" width="120" x="440" y="580" as="geometry" />
