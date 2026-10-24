@@ -88,7 +88,7 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="二元选项" vertex="1">
           <mxGeometry height="60" width="120" x="230" y="-270" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="为什么标签一般都是二元？不加入IDK？&lt;div&gt;因为显示标签输出并不如隐式获取置信度&lt;/div&gt;&lt;div&gt;IDK和其他标签在评测不同的东西，不是正确率而是自身的置信度&lt;/div&gt;&lt;div&gt;他无法被很好纳入后续决策，只在最难的地方IDK&lt;/div&gt;" vertex="1">
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="为什么标签一般都是二元？不加入IDK？&lt;div&gt;因为显示标签输出并不如隐式获取置信度&lt;/div&gt;&lt;div&gt;IDK和其他标签在评测不同的东西，不是正确率而是自身的置信度&lt;/div&gt;&lt;div&gt;他无法被很好纳入后续决策，只在最难的地方IDK，&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;直接丢弃这些样本会让 win rate 和排行榜产生系统性偏差&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;这样子混淆了人类也不一致与难度高两类题目&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="140" width="700" x="1210" y="-30" as="geometry" />
         </mxCell>
       </root>
