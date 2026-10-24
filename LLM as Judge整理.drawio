@@ -37,7 +37,7 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="缺口" vertex="1">
           <mxGeometry height="60" width="120" x="-70" y="580" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="普通的交换顺序求平均并无严格保障" vertex="1">
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="交换求平均没有严格保障；近分对上偏差和噪声分不开 [33]" vertex="1">
           <mxGeometry height="60" width="120" x="100" y="580" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="交换顺序取平均、评审团 [12]、长度控制 [2]、细粒度 rubric" vertex="1">
@@ -46,7 +46,7 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="程序化外部信号（单元测试、答案比对）加 best-of-N / self-consistency [26,71]" vertex="1">
           <mxGeometry height="60" width="120" x="270" y="375" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="模型是否可以评测更强模型的" vertex="1">
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="能否评测比自己强的模型 [11,21]；什么时候验证比生成容易，没有理论 [20]" vertex="1">
           <mxGeometry height="60" width="120" x="270" y="580" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="任务与指标" vertex="1">
@@ -76,11 +76,11 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="RewardBench 1/2 [54,55]、PPE [60]；指标：pairwise 准确率、下游 best-of-N / PPO 质量" vertex="1">
           <mxGeometry height="90" width="120" x="440" y="470" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="判得准不等于作为优化信号好用 [61,62]；rubric judge 也会被 hack [65]" vertex="1">
           <mxGeometry height="60" width="120" x="440" y="580" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="610" y="580" as="geometry" />
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="副作用检测、部分完成怎么计分；程序化检查本身也会错 [66,67]；缺统一框架 [77]" vertex="1">
+          <mxGeometry height="60" width="180" x="610" y="580" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="判断模式" vertex="1">
           <mxGeometry height="60" width="120" x="370" y="-160" as="geometry" />
