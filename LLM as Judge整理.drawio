@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="xN2g97uZQO7fY8nZSaSu">
-    <mxGraphModel dx="2552" dy="2116" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1934" dy="1777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -25,7 +25,7 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="错误" vertex="1">
           <mxGeometry height="60" width="120" x="270" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="reward hacking错误信号长期传播，影响深远" vertex="1">
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="reward hacking：错误信号被优化放大，长期传播 [8,24]" vertex="1">
           <mxGeometry height="60" width="120" x="440" y="270" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="最近已解决的任务" vertex="1">
@@ -64,8 +64,8 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="领域judge" vertex="1">
           <mxGeometry height="60" width="120" x="610" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="610" y="270" as="geometry" />
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="视觉：没看图、感知错误；&lt;div&gt;agent：轨迹长、状态看不见、偏向判成功 [48,53,80]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="610" y="270" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
           <mxGeometry height="60" width="120" x="610" y="375" as="geometry" />
