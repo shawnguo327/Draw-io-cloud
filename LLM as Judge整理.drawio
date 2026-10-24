@@ -104,10 +104,13 @@
           <mxGeometry height="60" width="120" x="970" y="750" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;meta charset=&quot;utf-8&quot;&gt;生成轨迹真实性 judge&quot;的效度研究" vertex="1">
-          <mxGeometry height="60" width="120" x="970" y="1050" as="geometry" />
+          <mxGeometry height="60" width="120" x="970" y="1130" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="涉及到agent长轨迹rollout的研究，并且可以和我之前的LDP-DiffTraj和起来用，可以使用成熟的baseline" vertex="1">
-          <mxGeometry height="130" width="120" x="970" y="1120" as="geometry" />
+          <mxGeometry height="130" width="120" x="970" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="测试LLM judge在POI选择上的表现，寻找更好的优化目标" vertex="1">
+          <mxGeometry height="60" width="120" x="970" y="980" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
