@@ -67,8 +67,8 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="视觉：没看图、感知错误；&lt;div&gt;agent：轨迹长、状态看不见、偏向判成功 [48,53,80]&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="200" x="610" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="120" x="610" y="375" as="geometry" />
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="程序化状态检查优先，再加受约束的 LLM checklist [78,79]；安全用专用分类器" vertex="1">
+          <mxGeometry height="60" width="170" x="610" y="375" as="geometry" />
         </mxCell>
         <mxCell id="BD-KMplQpbJL1vP_-pJB-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
           <mxGeometry height="60" width="120" x="610" y="470" as="geometry" />
