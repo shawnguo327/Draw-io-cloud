@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="xN2g97uZQO7fY8nZSaSu">
-    <mxGraphModel dx="1173" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2000" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -15,6 +15,15 @@
         </mxCell>
         <mxCell id="xeB9KZ9QD5QgyuJOSOHS-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="提供奖励信号" vertex="1">
           <mxGeometry height="60" width="120" x="440" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="问题" vertex="1">
+          <mxGeometry height="60" width="120" x="-70" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="位置偏差" vertex="1">
+          <mxGeometry height="60" width="120" x="100" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="270" y="270" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
