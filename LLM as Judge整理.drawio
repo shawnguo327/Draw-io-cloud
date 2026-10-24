@@ -130,7 +130,7 @@
         <mxCell id="BD-KMplQpbJL1vP_-pJB-41" parent="1" style="whiteSpace=wrap;html=1;" value="idea3:&lt;div&gt;在judge复现多种多LLM智能体路线，看是否有特殊现象。&lt;/div&gt;" vertex="1">
           <mxGeometry height="160" width="700" x="920" y="360" as="geometry" />
         </mxCell>
-        <mxCell id="BD-KMplQpbJL1vP_-pJB-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="已测试，发现原先的设计问题*1. bar Delta = |2 \bar p - 1|&lt;div&gt;近分对上，熵反而没有什么区分度。delta从 0 走到 0.2，熵只从 1.000 降到 0.971。&lt;/div&gt;&lt;div&gt;在 0.5 附近，二元熵是平方级的变化，所有近分对都挤在&quot;约 1 bit&quot;附近，几乎区分不开。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;delta在这一段是线性变化的，分辨率好得多。所以分桶、画准确率曲线、定阈值都应该用 delta。你们现在就是这么做的。这也部分解释了为什么按领域平均的熵 $H_d$ 不好用：信息在最需要分辨的区间被压扁了。&lt;/div&gt;" vertex="1">
+        <mxCell id="BD-KMplQpbJL1vP_-pJB-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="已测试，发现原先的设计问题*1. bar Delta = |2 \bar p - 1|&lt;div&gt;近分对上，熵反而没有什么区分度。delta从 0 走到 0.2，熵只从 1.000 降到 0.971。&lt;/div&gt;&lt;div&gt;在 0.5 附近，二元熵是平方级的变化，所有近分对都挤在&quot;约 1 bit&quot;附近，几乎区分不开。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;delta在这一段是线性变化的，分辨率好得多&lt;/div&gt;" vertex="1">
           <mxGeometry height="160" width="540" x="1660" y="190" as="geometry" />
         </mxCell>
       </root>
