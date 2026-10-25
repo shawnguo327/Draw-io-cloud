@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="xN2g97uZQO7fY8nZSaSu">
-    <mxGraphModel dx="2130" dy="1885" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2240" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="xeB9KZ9QD5QgyuJOSOHS-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="LLM as Judge" vertex="1">
-          <mxGeometry height="60" width="120" x="370" y="-20" as="geometry" />
+          <mxGeometry height="60" width="120" x="370" y="50" as="geometry" />
         </mxCell>
         <mxCell id="xeB9KZ9QD5QgyuJOSOHS-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="开放式任务&lt;div&gt;文本排序、agent轨迹评判等&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="100" y="160" as="geometry" />
