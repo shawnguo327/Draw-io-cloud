@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="xN2g97uZQO7fY8nZSaSu">
-    <mxGraphModel dx="2414" dy="1246" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1661" dy="2915" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -38,6 +38,12 @@
         </mxCell>
         <mxCell id="uwQ3w3c1RO8SPGFMa22s-7" parent="1" style="whiteSpace=wrap;html=1;" value="rufus air" vertex="1">
           <mxGeometry height="60" width="120" x="1390" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Input" vertex="1">
+          <mxGeometry height="310" width="120" x="60" y="-610" as="geometry" />
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="-584" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
