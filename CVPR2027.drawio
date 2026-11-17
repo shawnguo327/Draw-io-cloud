@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="xN2g97uZQO7fY8nZSaSu">
-    <mxGraphModel dx="3135" dy="3668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2902" dy="3534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -75,8 +75,8 @@
         <mxCell id="uwQ3w3c1RO8SPGFMa22s-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;align=center;shadow=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=1;fontSize=16;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Pairwise Question&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="207.5" x="220" y="-710" as="geometry" />
         </mxCell>
-        <mxCell id="uwQ3w3c1RO8SPGFMa22s-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;shadow=1;fontStyle=1;fontSize=16;" value="(a) Tie Recalibration" vertex="1">
-          <mxGeometry height="40" width="167.5" x="470" y="-770" as="geometry" />
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;shadow=1;fontStyle=1;fontSize=16;" value="(a) Tie Recalibration&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;u&gt;&lt;i&gt;sec 5.1&lt;/i&gt;&lt;/u&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="53" width="213.75" x="466.25" y="-770" as="geometry" />
         </mxCell>
         <mxCell id="uwQ3w3c1RO8SPGFMa22s-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;shadow=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=1;fontSize=16;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&quot;How good is this edit,&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;from 1 to 9?&quot;&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="167.5" width="207.5" x="224.5" y="-337.5" as="geometry" />
@@ -192,11 +192,11 @@
             <mxPoint x="590" y="-600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uwQ3w3c1RO8SPGFMa22s-72" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;shadow=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#333333;fontStyle=1;fillColor=#f5f5f5;" value="(b) Absolute level" vertex="1">
-          <mxGeometry height="40" width="160" x="470" y="-420" as="geometry" />
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-72" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;shadow=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#333333;fontStyle=1;fillColor=#f5f5f5;" value="(b) Absolute level&lt;div&gt;&lt;u style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;sec 5.2&lt;/i&gt;&lt;/u&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="53" width="167.5" x="470" y="-420" as="geometry" />
         </mxCell>
-        <mxCell id="uwQ3w3c1RO8SPGFMa22s-73" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;shadow=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#333333;fontStyle=1;fillColor=#f5f5f5;" value="(c&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot;&gt;) Certified Actions&lt;/span&gt;" vertex="1">
-          <mxGeometry height="53" width="220" x="880" y="-748" as="geometry" />
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-73" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;shadow=1;strokeColor=#666666;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#333333;fontStyle=1;fillColor=#f5f5f5;" value="(c&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot;&gt;) Certified Actions&lt;/span&gt;&lt;div&gt;&lt;u style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;sec 5.3&lt;/i&gt;&lt;/u&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="68" width="230" x="870" y="-759" as="geometry" />
         </mxCell>
         <mxCell id="uwQ3w3c1RO8SPGFMa22s-74" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;Judges&#39; side&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="110" x="501.66" y="-490" as="geometry" />
@@ -288,10 +288,10 @@
             <mxPoint x="1295.2900000000002" y="-459.96000000000004" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uwQ3w3c1RO8SPGFMa22s-112" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;shadow=1;" value="&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Fit sources (25%, with human labels)&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;font-size: 15px; background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot;&gt;① Weights w_A, w_B, w_tie:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;&amp;nbsp; &lt;/b&gt;&amp;nbsp;recalibrated answers to match the human label distribution&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;② Linear four-state head:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;signals&lt;/b&gt; → P(both good, only A, only B, neither good)&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="124" width="442.88" x="900" y="-250" as="geometry" />
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-112" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;shadow=1;" value="&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Fit sources&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;① Weights w_A, w_B, w_tie:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&amp;nbsp; &lt;/b&gt;&amp;nbsp;recalibrated answers to match the human label distribution&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;② Linear four-state head:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp;signals&lt;/b&gt; → P(both good, only A, only B, neither good)&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="400" x="900" y="-250" as="geometry" />
         </mxCell>
-        <mxCell id="uwQ3w3c1RO8SPGFMa22s-115" edge="1" parent="1" source="uwQ3w3c1RO8SPGFMa22s-112" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.093;exitY=0.03;exitDx=0;exitDy=0;curved=1;curveGeometry=1;fillColor=#E6E6E6;strokeColor=#000000;" target="uwQ3w3c1RO8SPGFMa22s-80" value="">
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-115" edge="1" parent="1" source="uwQ3w3c1RO8SPGFMa22s-112" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.056;exitY=-0.006;exitDx=0;exitDy=0;curved=1;curveGeometry=1;fillColor=#E6E6E6;strokeColor=#000000;" target="uwQ3w3c1RO8SPGFMa22s-80" value="">
           <mxGeometry height="50" relative="1" width="50" x="-0.0007" as="geometry">
             <mxPoint x="740" y="-520" as="sourcePoint" />
             <mxPoint x="790" y="-570" as="targetPoint" />
@@ -299,6 +299,18 @@
         </mxCell>
         <mxCell id="uwQ3w3c1RO8SPGFMa22s-116" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#808080;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Offline&lt;/font&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="910" y="-240" as="geometry" />
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-118" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;shadow=1;" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Calibration sources&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Learn-then-Test:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;&lt;/b&gt;try thresholds from strict to loose,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp; &amp;nbsp;keep the loosest λ whose error passes the test.&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="280" x="1307.5" y="-250" as="geometry" />
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-119" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#808080;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Offline&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="1307.5" y="-250" as="geometry" />
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-120" edge="1" parent="1" source="uwQ3w3c1RO8SPGFMa22s-119" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.387;exitY=0.026;exitDx=0;exitDy=0;curved=1;curveGeometry=1;fillColor=#E6E6E6;strokeColor=#000000;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.2226" as="geometry">
+            <mxPoint x="1330.5" y="-287" as="sourcePoint" />
+            <mxPoint x="1329.5" y="-416" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
