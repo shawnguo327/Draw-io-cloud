@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="xN2g97uZQO7fY8nZSaSu">
-    <mxGraphModel dx="2945" dy="3559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2783" dy="3466" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -52,7 +52,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="uwQ3w3c1RO8SPGFMa22s-13" parent="1" style="whiteSpace=wrap;html=1;rounded=1;roundedPerimeter=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&quot;Which is better?&quot;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="60" width="146.75" x="263.25" y="-100" as="geometry" />
+          <mxGeometry height="60" width="146.75" x="250.37" y="-100" as="geometry" />
         </mxCell>
         <mxCell id="uwQ3w3c1RO8SPGFMa22s-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;shadow=1;fillColor=#e1d5e7;strokeColor=#9673a6;arcSize=11;" value="" vertex="1">
           <mxGeometry height="295.5" width="370" x="470" y="-750" as="geometry" />
@@ -333,8 +333,35 @@
         <mxCell id="uwQ3w3c1RO8SPGFMa22s-123" parent="1" style="whiteSpace=wrap;html=1;rounded=1;roundedPerimeter=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;Did not release &quot;tie&quot; probability&lt;/span&gt;" vertex="1">
           <mxGeometry height="60" width="146.75" x="566.66" y="-100" as="geometry" />
         </mxCell>
-        <mxCell id="uwQ3w3c1RO8SPGFMa22s-125" parent="1" style="whiteSpace=wrap;html=1;rounded=1;roundedPerimeter=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;Did not release &quot;tie&quot; probability&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="146.75" x="1020" y="-100" as="geometry" />
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-136" edge="1" parent="1" source="uwQ3w3c1RO8SPGFMa22s-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;strokeWidth=3;" target="uwQ3w3c1RO8SPGFMa22s-135" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-125" parent="1" style="whiteSpace=wrap;html=1;rounded=1;roundedPerimeter=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Calibrated on pairs with a winner, ties removed from test sets&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="146.75" x="911.63" y="-100" as="geometry" />
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-127" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2E6FD0;" value="" vertex="1">
+          <mxGeometry height="60" width="15" x="745" y="-110" as="geometry" />
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-130" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="" vertex="1">
+          <mxGeometry height="10" width="15" x="800" y="-60" as="geometry" />
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-128" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#7a52c7, #ededed);" value="" vertex="1">
+          <mxGeometry height="68" width="15" x="773.18" y="-118" as="geometry" />
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-129" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="866.1800000000001" y="-50" as="sourcePoint" />
+            <mxPoint x="728" y="-50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-138" edge="1" parent="1" source="uwQ3w3c1RO8SPGFMa22s-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;strokeWidth=3;" target="uwQ3w3c1RO8SPGFMa22s-137">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-135" parent="1" style="whiteSpace=wrap;html=1;rounded=1;roundedPerimeter=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;confidence ≥ λ&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="146.75" x="1140" y="-100" as="geometry" />
+        </mxCell>
+        <mxCell id="uwQ3w3c1RO8SPGFMa22s-137" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;shadow=1;" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Might deliver &lt;/span&gt;&lt;span style=&quot;color: light-dark(#FF6666,var(--ge-light-color, #ffffff));&quot;&gt;failed edit&lt;/span&gt;&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1387.5" y="-100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
