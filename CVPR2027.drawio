@@ -239,7 +239,7 @@
           <mxGeometry height="90" width="120" x="1735.6799999999998" y="-500" as="geometry" />
         </mxCell>
         <mxCell id="uwQ3w3c1RO8SPGFMa22s-102" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;No retraining needed:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;only token probabilities are read&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="138.7" x="1284.4" y="-730" as="geometry" />
+          <mxGeometry height="160" width="201.9" x="1250" y="-790" as="geometry" />
         </mxCell>
         <mxCell id="uwQ3w3c1RO8SPGFMa22s-104" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.538;entryY=0.524;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=default;width=8;endSize=9;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
